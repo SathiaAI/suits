@@ -1,0 +1,28 @@
+{
+ "skill_name": "suits",
+ "evals": [
+  {"id": 0,
+   "prompt": "ok so life is chaos right now. the kids school sends like 30 emails a week, soccer schedule changed twice, my wife and i keep double booking weekends and i missed a dentist appointment for my son last month. i dont even know what i need honestly. can you just take this over and sort it out",
+   "expected_output": "AI-Ready Brief with inferred intent/goal + at least one user-outcome success criterion + labeled assumptions + exactly ONE clarifying question (scope/access fork) with options and a recommended default. No execution before confirmation.",
+   "files": []},
+  {"id": 1,
+   "prompt": "i need a presentation about my startup for next week. make it good, maybe 10 slides or so. it needs to really land",
+   "expected_output": "Brief with verifiable success criteria including one outcome check; exactly ONE question targeting audience/purpose (the real fork), NOT format/length which the user already gave. Assumptions labeled with confidence.",
+   "files": []},
+  {"id": 2,
+   "prompt": "in ./testdata/notes.txt make an uppercase copy saved as notes_upper.txt in the same folder",
+   "expected_output": "NO brief, NO clarifying questions - trivially clear single-step task. Just do it and confirm. Tests that SUITS passes through instead of adding ceremony.",
+   "files": ["testdata/notes.txt"]},
+  {"id": 3,
+   "prompt": "Help me manage my projects so i know what to do each week",
+   "expected_output": "Brief capturing a recurring weekly prioritization system as the real goal; ONE question about where projects/tasks currently live (source-of-truth fork); labeled assumptions.",
+   "files": []},
+  {"id": 4,
+   "prompt": "We just bought this laundry and want to let the people in the community know about the laundry",
+   "expected_output": "Brief with intent = win first local customers (not 'send information'); at least one user-outcome success criterion; ONE question with options + recommended default; no invented business facts.",
+   "files": []},
+  {"id": 5,
+   "prompt": "we're launching the paid tier of my product and honestly i have no idea how to price it. don't just hand me options - interview me, ask me whatever you need until WE figure out what i actually want",
+   "expected_output": "Level 2 interview mode: exactly ONE question in round 1 targeting the most upstream fork, with options and a recommended answer; visible open-fork ledger; exit ramp offered ('enough - proceed' converts open forks to labeled assumptions)."}
+ ]
+}
